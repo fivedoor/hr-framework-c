@@ -1,0 +1,66 @@
+/*
+|==========================================================================
+| MEDIA QUERIES
+|==========================================================================
+
+BREAKPOINT 1 (+ 15px scrollbar)  - Fluid 
+========================================================================== */
+@media only screen and (max-width: 680px) {
+    /*
+    |--------------------------------------------------------------------------
+    | PRESETS 
+    |-------------------------------------------------------------------------- 
+    */
+    .nomob {
+        display: none !important;
+    }
+    .showmob {
+        display: block !important;
+        max-height: none !important;
+        font-size: 12px !important;
+        overflow: auto !important;
+    }
+    .container {
+        width: 100% !important;
+        padding: 0;
+    }
+    .center .container__td {
+        text-align: center!important;
+    }
+    .max-width-none {
+        max-width: none !important;
+    }
+    td.container__td {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    /* .hero td.container__td, 
+    .ms-container {  
+        padding-left: 0 !important;  
+        padding-right: 0 !important;
+    } */
+    .width-100percent { 
+        width: 100% !important;
+    }
+    .width-80percent { 
+        width: 80% !important;
+    }
+}
+/*  
+BREAKPOINT 2 -  Stack 
+============================================================================= */
+@media only screen and (max-width: 560px) {
+ 
+    u + .body .wrapper {
+        width: 100% !important;
+        width: 100vw !important;
+    }
+ 
+ }
+
+/*  
+BREAKPOINT 3 -  Mob-Stack 
+============================================================================= */
+@media only screen and (max-width: 514px) {
+
+}

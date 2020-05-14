@@ -1,0 +1,440 @@
+/*
+|==========================================================================
+| INLINE CSS 
+|==========================================================================
+*/
+/** 
+*/
+/*
+|--------------------------------------------------------------------------
+| GLOBAL
+|-------------------------------------------------------------------------- 
+*/
+body
+{
+    padding: 0;
+}
+img
+{
+    line-height: 100%;
+
+    display: block;
+
+    height: auto;
+
+    text-decoration: none;
+
+    border: 0;
+    outline: none;
+}
+table.wrapper
+{
+    padding: 0;
+    background-color: #f7f7f8 !important;
+    width:100%
+}
+.wrapper__td {
+    width:100%;
+}
+/** beige  target elements which are DIRECT children (not nested) and only the first <td> of those children */
+.wrapper > tr > td:nth-child(1)
+{
+    padding: 0;
+}
+table.container
+{
+    padding: 0;
+    margin:0 auto; 
+    width: 100%;
+    max-width:600px;
+}
+/** pink */
+td.container__td
+{
+    padding-top: 0;
+   padding-right:  3.333333333333%;
+    padding-bottom:0;
+    padding-left:  3.333333333333%;
+}
+div.mob-nav-hamburger {
+    display:none; 
+    width:0px; 
+    overflow:hidden;
+    mso-hide:all;
+}
+.showmob {
+    display:none; 
+    overflow:hidden; 
+    max-height: 0px; 
+    mso-hide:all;
+}
+.divider-grey { 
+    line-height:1px;
+    font-size:1px;
+    mso-line-height-rule: exactly;
+    background: none; 
+    border-bottom: 1px solid #cbcbcb; 
+    height: 1px; 
+    width: 100%; 
+    margin: 0;
+ }
+
+/*
+|--------------------------------------------------------------------------
+| TYPOGRAPHY
+|-------------------------------------------------------------------------- 
+*/
+
+.h1, 
+.h1 a{
+    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
+    font-size: 36px !important;
+    line-height: 52px !important;
+    letter-spacing: 1.25px !important;
+    font-weight: normal !important;
+}
+.h2, 
+.h2 a{
+    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
+    font-size: 28px !important;
+    line-height: 42px !important;
+    letter-spacing: 1px !important;
+    font-weight: normal !important;
+    color: #263645;
+}
+.h3, .h3 a{
+    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
+    letter-spacing: 1.25px !important;
+    font-weight: normal !important;
+    color: #263645;
+
+}
+.subheader, 
+.subheader a{
+    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 24px !important;
+    letter-spacing: 2.3px !important;
+    font-weight: bold !important;
+}
+.body, 
+.body a{
+    font-family: 'Museo Sans', Verdana, Geneva, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 28px !important;
+    letter-spacing: 0.75px !important;
+    color: #666666;
+}
+.note, 
+.note a{
+    font-family: 'Museo Sans', Verdana, Geneva, sans-serif !important;
+    letter-spacing: 0.4px !important;
+    font-size: 13px;
+    line-height: 24px !important;
+    color: #868686;
+
+}
+.large-cta,
+.large-cta a{
+    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+    border-top-width: 14px !important;
+    border-bottom-width: 10px !important;
+    border-right-width: 30px !important;
+    border-left-width: 30px !important;
+    font-weight: bold !important;      
+}
+.h1 a, 
+.h1-l a,
+.h2 a, 
+.h3 a, 
+.h4 a, 
+.article-text a,
+.quote-text a,
+#editors-text a,
+.pid-title a, 
+.pid-text a,
+.fr-text a,
+.ms-text a 
+{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.footer-text
+{
+    padding: 0 0 13px 0;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #2b2b2b;
+    line-height: 18px;
+    text-align: center;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  1COL - HERO
+|-------------------------------------------------------------------------- 
+*/
+.hero .container__td
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f7f7f7;
+}    /** pink  | overide container td padding here if required  e.g. for full width img */
+.hero .content
+{
+    padding: 0;
+}
+.hero-title
+{
+     padding-bottom: 8px;
+}
+.hero-text {
+     padding-bottom: 40px;
+
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL FLUID
+|-------------------------------------------------------------------------- 
+*/
+/**  overide container td padding here if required  e.g. for full width img */
+.mod-2col-fluid .container__td
+{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-bottom: 2px solid #f7f7f7;
+}
+/** Get rid of top pad on first of 2col modules */
+#first .container__td
+{
+    padding-top: 40px;
+}
+.mod-2col-fluid .inner-container
+{
+    padding: 0;
+}
+.mod-2col-fluid .inner-container__td
+{
+    padding: 10px 0;
+}
+/** LEFT COL ----------------------------------------------- */
+.mod-2col-fluid .col-l
+{
+    padding: 0;
+    width: 170px; /** convert to perc*/
+}
+
+.mod-2col-fluid .col-l__td
+{
+    padding: 0 20px 0 20px;
+}
+.mod-2col-fluid .col-l .content
+{
+    padding: 0;
+}
+/** RIGHT COL ----------------------------------------------- */
+.mod-2col-fluid .col-r
+{
+    padding: 0;
+    width: 290px; /** convert to perc*/
+}
+
+.mod-2col-fluid .col-r__td
+{
+    width: 100%;
+    padding: 0 20px 0 10px;
+
+    text-align: left;
+    height: 150px
+} 
+.mod-2col-fluid .content-container
+{
+    padding: 0;
+        vertical-align: middle;
+
+}
+.mod-2col-fluid .content-container__td
+{
+    padding: 0;
+} 
+.mod-2col-fluid .col-r .content
+{
+    padding: 0;
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL STACK
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-stack .container__td
+{
+    padding-top: 24px;
+    padding-right: 5.084745762712%;
+    padding-bottom: 0;
+    padding-left: 5.084745762712%;
+} /** overide container td padding here if required  e.g. for full width img */
+
+.mod-2col-stack .inner-container
+{
+    padding: 0;
+}
+.mod-2col-stack .inner-container__td
+{
+    padding: 0;
+}
+/** LEFT COL -------------------------------------------------- */
+.mod-2col-stack .col-l
+{
+    width: 51.88679245283%;
+}
+.mod-2col-stack .col-l__td
+{
+    padding: 0 ;
+}
+.mod-2col-stack .content-container
+{
+    padding: 0;
+}
+
+.mod-2col-stack .content-container__td
+{
+    padding: 25px 21px 25px;
+}
+.mod-2col-stack .col-l .content
+{
+    padding: 0;
+}
+
+/** RIGHT COL ----------------------------------------------- */
+.mod-2col-stack .col-r
+{
+    width: 48.11320754717%;
+}
+.mod-2col-stack .col-r__td
+{
+    width: 100%;
+    padding: 0;
+    padding-top: 18px;
+
+    text-align: left;
+    vertical-align: top;
+} 
+/*
+|--------------------------------------------------------------------------
+|  2 COL STACK UNEVEN
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-stack-uneven .container__td {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.mod-2col-uneven .container__td {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL STACK EVEN
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-stack-even .container__td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.mod-2col-stack-even .img {
+    padding-bottom: 12px;
+    width:100%;
+}
+.mod-2col-stack-even .img-title {
+    padding-bottom: 12px;
+    width:100%;
+}
+.mod-2col-stack-even .module-inner {
+    padding: 10px 5px;
+}
+/*
+|--------------------------------------------------------------------------
+|  2 COL STACK PROMO
+|-------------------------------------------------------------------------- 
+*/
+
+.mod-2col-promo .container__td {
+    padding-top: 48px;
+    padding-bottom: 48px;
+     text-align: center;
+     font-size: 0;
+}
+.mod-2col-promo .column {
+     width: 100%;
+     max-width: 320px; 
+     /* min-width: 250px; */    
+     display: inline-block; 
+     vertical-align: top;
+}
+.mod-2col-promo .contents {
+       text-align: left;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  3 COL STACK FURTHER STORIES
+|-------------------------------------------------------------------------- 
+*/
+.mod-3col-stack-fr.last .container__td {
+     padding-top: 0;
+    padding-bottom:42px;
+    width:100%;
+    background-color: #f0f0f0;
+}
+
+.mod-3col-stack-fr.first .container__td {
+    padding-top: 42px;
+    padding-bottom:0;
+    width:100%;
+    background-color: #f0f0f0;
+}
+
+ .mod-3col-stack-fr .column-one__td,
+.mod-3col-stack-fr .column-two__td,
+.mod-3col-stack-fr .column-three__td  {
+    padding:  8px 0;
+}
+
+.mod-3col-stack-fr .fr-title {
+    width:100%;
+    padding: 12px 20px 0;
+}
+
+.mod-3col-stack-fr .fr-divider {
+    width:100%;
+    padding: 0 20px 6px;
+}
+
+.mod-3col-stack-fr .fr-cta {
+    width:100%;
+    padding: 6px 20px 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+|  FOOTER
+|-------------------------------------------------------------------------- 
+*/
+
+.footer .container__td
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    background-color: #f0f0f0;
+}   
+
+
