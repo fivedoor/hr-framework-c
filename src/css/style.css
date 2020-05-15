@@ -14,3 +14,19 @@
       padding-right: 20px !important; 
       padding-left: 20px !important;
   }
+
+/*
+|--------------------------------------------------------------------------
+|  BORDER RADIUS ENHANCEMENTS
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-fluid .inner-container:first-child {
+    border-radius: 6px 6px 0 0; 
+    border-radius: 6px 6px 0 0; 
+    -moz-border-radius: 6px 6px 0 0; 
+}
+.mod-2col-fluid .inner-container:last-child {
+    border-radius: 0 0 6px 6px; 
+    -webkit-border-radius: 0 0 6px 6px; 
+    -moz-border-radius: 0 0 6px 6px; 
+}

@@ -52,9 +52,9 @@ table.container
 td.container__td
 {
     padding-top: 0;
-   padding-right:  3.333333333333%;
+    padding-right: 20px;  /* 3.333333333333%; */
     padding-bottom:0;
-    padding-left:  3.333333333333%;
+    padding-left: 20px; /* 3.333333333333%; */
 }
 div.mob-nav-hamburger {
     display:none; 
@@ -136,6 +136,11 @@ div.mob-nav-hamburger {
     color: #868686;
 
 }
+.note.note-title , 
+.note.note-title a {
+   color: #666666;
+
+}
 .large-cta,
 .large-cta a{
     font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
@@ -146,8 +151,7 @@ div.mob-nav-hamburger {
     border-right-width: 30px !important;
     border-left-width: 30px !important;
     font-weight: bold !important;   
-    letter-spacing: 1px;
-
+    letter-spacing: 10px !important;   
 }
 .h1 a, 
 .h1-l a,
@@ -215,7 +219,6 @@ div.mob-nav-hamburger {
     padding-top: 0;
     padding-bottom: 0;
 
-    border-bottom: 2px solid #f7f7f7;
 }
 /** Get rid of top pad on first of 2col modules */
 /* #first .container__td
@@ -225,7 +228,10 @@ div.mob-nav-hamburger {
 .mod-2col-fluid .inner-container
 {
     padding: 0;
+    border-bottom: 2px solid #f7f7f7;
+
 }
+
 .mod-2col-fluid .inner-container__td
 {
     padding: 10px 0;
@@ -239,7 +245,8 @@ div.mob-nav-hamburger {
 
 .mod-2col-fluid .col-l__td
 {
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
+    height: 130px 
 }
 .mod-2col-fluid .col-l .content
 {
@@ -255,10 +262,10 @@ div.mob-nav-hamburger {
 .mod-2col-fluid .col-r__td
 {
     width: 100%;
-    padding: 13% 20px 0 10px;
+    padding: 0 20px 0 10px;
 
     text-align: left;
-    /* height: 150px */
+    height: 130px 
 } 
 .mod-2col-fluid .content-container
 {
@@ -274,6 +281,7 @@ div.mob-nav-hamburger {
 {
     padding: 0;
 }
+
 /*
 |--------------------------------------------------------------------------
 |  TOTAL
@@ -282,9 +290,7 @@ div.mob-nav-hamburger {
 #total .container__td 
 { 
     padding-top: 20px;
-    padding-right: 5.084745762712%;
     padding-bottom: 40px;
-    padding-left: 5.084745762712%;
  }
 /*
 |--------------------------------------------------------------------------
@@ -317,6 +323,7 @@ div.mob-nav-hamburger {
 /** LEFT COL -------------------------------------------------- */
 .mod-2col-stack .col-l
 {
+   
 /*     width: 51.88679245283%;
  */}
 .mod-2col-stack .col-l__td
@@ -352,3 +359,91 @@ div.mob-nav-hamburger {
     vertical-align: middle;
 } 
 
+/*
+|--------------------------------------------------------------------------
+|  3 COL STACK FURTHER STORIES
+|-------------------------------------------------------------------------- 
+*/
+.mod-3col-stack-fr .container__td {
+     padding-top: 0;
+    padding-bottom:42px;
+    padding-left: 0; 
+   padding-right: 0; 
+    width:100%;
+}
+.mod-3col-stack-fr .inner-container__t {
+    max-width:556px;
+    width:100%
+}
+.mod-3col-stack-fr .inner-container__td {
+    font-size:0;
+    padding: 0;" 
+}
+
+.mod-3col-stack-fr div.column-one,
+.mod-3col-stack-fr div.column-two,
+.mod-3col-stack-fr div.column-three{
+    display:inline-block;
+    max-width:33.2222%; /*  rounded down from 33.3333%; because chrome stacking them */
+    min-width: 161px;  /*  rounded down from 200px because chrome stacking them */
+    vertical-align:top;
+    width:100%;
+}
+
+.mod-3col-stack-fr .column-one__td,
+.mod-3col-stack-fr .column-two__td,
+.mod-3col-stack-fr .column-three__td  {
+    padding:  10px;
+}
+
+.mod-3col-stack-fr .column-one__td table,
+.mod-3col-stack-fr .column-two__td table,
+.mod-3col-stack-fr .column-three__td table  {
+    border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+    -moz-border-radius: 6px; 
+}
+
+.mod-3col-stack-fr .fr-title {
+    width:100%;
+    padding: 12px 20px 0;
+}
+
+.mod-3col-stack-fr .fr-divider {
+    width:100%;
+    padding: 0 20px 6px;
+}
+
+.mod-3col-stack-fr .fr-cta {
+    width:100%;
+    padding: 6px 20px 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  REFER A FRIEND
+|-------------------------------------------------------------------------- 
+*/
+#refer .container__td {
+    padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+#refer .refer-title  {
+    padding-bottom:  15px;
+}
+
+#refer .refer-text  {
+    padding-bottom:  30px;
+}
+
+#refer .link  {
+     color: #3CA6E0;
+     font-weight: bold
+}
+
+#refer .learn  {
+    padding-top:  10px;
+     color: #263645
+}

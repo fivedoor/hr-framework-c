@@ -51,30 +51,66 @@ BREAKPOINT 2 -  Stack
 ============================================================================= */
 @media only screen and (max-width: 614px) {
 
-
-  /*
+/*
     |--------------------------------------------------------------------------
     | SINGLE STORY - 2 COL STACK UNEVEN
     |-------------------------------------------------------------------------- 
-    */
+*/
     td.align-center, table.align-center, img.align-center {
         text-align: center !important;
         margin: 0 auto !important;
     }
-   
+
+
  }
 
 /*  
 BREAKPOINT 3 -  Mob-Stack 
 ============================================================================= */
 @media only screen and (max-width: 514px) {
+ 
+/*   .mod-2col-fluid .col-r__td {
+        padding: 10% 20px 10% 10px !important;
+        height: auto !important;
+ } */
+
+/*
+|--------------------------------------------------------------------------
+|  2 COL FLUID
+|-------------------------------------------------------------------------- 
+*/
+.mod-2col-fluid .col-l__td
+{
+    padding: 0 7%;
+}
+ /*
+|--------------------------------------------------------------------------
+|  3 COL STACK FURTHER STORIES
+|-------------------------------------------------------------------------- 
+*/
+.mod-3col-stack-fr .inner-container__td {
+    padding: 0 10px;
+
+}
+
+/*  
+BREAKPOINT 3 -  Mob-Stack 
+============================================================================= */
+@media only screen and (max-width: 338px) {
         u + .body .wrapper {
         width: 100% !important;
         width: 100vw !important;
     }
  
-  .mod-2col-fluid .col-r__td {
-        padding: 10% 20px 10% 10px !important;
-        height: auto !important;
- }
+ /*
+|--------------------------------------------------------------------------
+|  3 COL STACK FURTHER STORIES
+|-------------------------------------------------------------------------- 
+*/
+.mod-3col-stack-fr div.column-one,
+.mod-3col-stack-fr div.column-two,
+.mod-3col-stack-fr div.column-three{
+    max-width:100% !important; 
+}
+
 }
