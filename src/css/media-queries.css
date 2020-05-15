@@ -30,10 +30,10 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
     .max-width-none {
         max-width: none !important;
     }
-    td.container__td {
+   /*  td.container__td {
         padding-left: 0 !important;
         padding-right: 0 !important;
-    }
+    } */
     /* .hero td.container__td, 
     .ms-container {  
         padding-left: 0 !important;  
@@ -49,18 +49,32 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
 /*  
 BREAKPOINT 2 -  Stack 
 ============================================================================= */
-@media only screen and (max-width: 560px) {
- 
-    u + .body .wrapper {
-        width: 100% !important;
-        width: 100vw !important;
+@media only screen and (max-width: 614px) {
+
+
+  /*
+    |--------------------------------------------------------------------------
+    | SINGLE STORY - 2 COL STACK UNEVEN
+    |-------------------------------------------------------------------------- 
+    */
+    td.align-center, table.align-center, img.align-center {
+        text-align: center !important;
+        margin: 0 auto !important;
     }
- 
+   
  }
 
 /*  
 BREAKPOINT 3 -  Mob-Stack 
 ============================================================================= */
 @media only screen and (max-width: 514px) {
-
+        u + .body .wrapper {
+        width: 100% !important;
+        width: 100vw !important;
+    }
+ 
+  .mod-2col-fluid .col-r__td {
+        padding: 10% 20px 10% 10px !important;
+        height: auto !important;
+ }
 }

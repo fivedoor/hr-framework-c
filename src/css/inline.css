@@ -145,7 +145,9 @@ div.mob-nav-hamburger {
     border-bottom-width: 10px !important;
     border-right-width: 30px !important;
     border-left-width: 30px !important;
-    font-weight: bold !important;      
+    font-weight: bold !important;   
+    letter-spacing: 1px;
+
 }
 .h1 a, 
 .h1-l a,
@@ -188,6 +190,12 @@ div.mob-nav-hamburger {
 {
     padding: 0;
 }
+.hero #package
+{
+    padding: 30px 0 35px;
+    width:100%
+}
+
 .hero-title
 {
      padding-bottom: 8px;
@@ -210,10 +218,10 @@ div.mob-nav-hamburger {
     border-bottom: 2px solid #f7f7f7;
 }
 /** Get rid of top pad on first of 2col modules */
-#first .container__td
+/* #first .container__td
 {
     padding-top: 40px;
-}
+} */
 .mod-2col-fluid .inner-container
 {
     padding: 0;
@@ -226,7 +234,7 @@ div.mob-nav-hamburger {
 .mod-2col-fluid .col-l
 {
     padding: 0;
-    width: 170px; /** convert to perc*/
+    width: 36.95652173913% /**  170px; convert to perc*/
 }
 
 .mod-2col-fluid .col-l__td
@@ -241,16 +249,16 @@ div.mob-nav-hamburger {
 .mod-2col-fluid .col-r
 {
     padding: 0;
-    width: 290px; /** convert to perc*/
+    width: 63.04347826087%  /**  290px; convert to perc*/
 }
 
 .mod-2col-fluid .col-r__td
 {
     width: 100%;
-    padding: 0 20px 0 10px;
+    padding: 13% 20px 0 10px;
 
     text-align: left;
-    height: 150px
+    /* height: 150px */
 } 
 .mod-2col-fluid .content-container
 {
@@ -268,30 +276,49 @@ div.mob-nav-hamburger {
 }
 /*
 |--------------------------------------------------------------------------
+|  TOTAL
+|-------------------------------------------------------------------------- 
+*/
+#total .container__td 
+{ 
+    padding-top: 20px;
+    padding-right: 5.084745762712%;
+    padding-bottom: 40px;
+    padding-left: 5.084745762712%;
+ }
+/*
+|--------------------------------------------------------------------------
 |  2 COL STACK
 |-------------------------------------------------------------------------- 
 */
 .mod-2col-stack .container__td
 {
     padding-top: 24px;
-    padding-right: 5.084745762712%;
-    padding-bottom: 0;
-    padding-left: 5.084745762712%;
+    padding-bottom: 50px;
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #f7f7f7;
+/*     line-height: 275px
+ */
 } /** overide container td padding here if required  e.g. for full width img */
-
 .mod-2col-stack .inner-container
 {
     padding: 0;
+    max-width:560px;
+    width: 100%;
 }
 .mod-2col-stack .inner-container__td
 {
     padding: 0;
+    font-size: 0;
+    text-align: center;
 }
 /** LEFT COL -------------------------------------------------- */
 .mod-2col-stack .col-l
 {
-    width: 51.88679245283%;
-}
+/*     width: 51.88679245283%;
+ */}
 .mod-2col-stack .col-l__td
 {
     padding: 0 ;
@@ -322,119 +349,6 @@ div.mob-nav-hamburger {
     padding-top: 18px;
 
     text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
 } 
-/*
-|--------------------------------------------------------------------------
-|  2 COL STACK UNEVEN
-|-------------------------------------------------------------------------- 
-*/
-.mod-2col-stack-uneven .container__td {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.mod-2col-uneven .container__td {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-/*
-|--------------------------------------------------------------------------
-|  2 COL STACK EVEN
-|-------------------------------------------------------------------------- 
-*/
-.mod-2col-stack-even .container__td {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.mod-2col-stack-even .img {
-    padding-bottom: 12px;
-    width:100%;
-}
-.mod-2col-stack-even .img-title {
-    padding-bottom: 12px;
-    width:100%;
-}
-.mod-2col-stack-even .module-inner {
-    padding: 10px 5px;
-}
-/*
-|--------------------------------------------------------------------------
-|  2 COL STACK PROMO
-|-------------------------------------------------------------------------- 
-*/
-
-.mod-2col-promo .container__td {
-    padding-top: 48px;
-    padding-bottom: 48px;
-     text-align: center;
-     font-size: 0;
-}
-.mod-2col-promo .column {
-     width: 100%;
-     max-width: 320px; 
-     /* min-width: 250px; */    
-     display: inline-block; 
-     vertical-align: top;
-}
-.mod-2col-promo .contents {
-       text-align: left;
-}
-
-/*
-|--------------------------------------------------------------------------
-|  3 COL STACK FURTHER STORIES
-|-------------------------------------------------------------------------- 
-*/
-.mod-3col-stack-fr.last .container__td {
-     padding-top: 0;
-    padding-bottom:42px;
-    width:100%;
-    background-color: #f0f0f0;
-}
-
-.mod-3col-stack-fr.first .container__td {
-    padding-top: 42px;
-    padding-bottom:0;
-    width:100%;
-    background-color: #f0f0f0;
-}
-
- .mod-3col-stack-fr .column-one__td,
-.mod-3col-stack-fr .column-two__td,
-.mod-3col-stack-fr .column-three__td  {
-    padding:  8px 0;
-}
-
-.mod-3col-stack-fr .fr-title {
-    width:100%;
-    padding: 12px 20px 0;
-}
-
-.mod-3col-stack-fr .fr-divider {
-    width:100%;
-    padding: 0 20px 6px;
-}
-
-.mod-3col-stack-fr .fr-cta {
-    width:100%;
-    padding: 6px 20px 20px;
-    border-bottom: 1px solid #cccccc;
-}
-
-
-
-/*
-|--------------------------------------------------------------------------
-|  FOOTER
-|-------------------------------------------------------------------------- 
-*/
-
-.footer .container__td
-{
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    background-color: #f0f0f0;
-}   
-
 
