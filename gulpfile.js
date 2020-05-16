@@ -317,9 +317,10 @@ gulp.task('css:inline-ignore', function(){
       return gulp
         .src(['src/index.html'])
         .pipe(replace('<link rel="stylesheet" href="css/resets.css">', ''))
+        .pipe(replace('<link rel="stylesheet" href="css/fonts.css">', ''))
+        .pipe(replace('<link rel="stylesheet" href="css/webkit.css">', ''))
         .pipe(replace('<link rel="stylesheet" href="css/style.css">', ''))
         .pipe(replace('<link rel="stylesheet" href="css/media-queries.css">', ''))
-        .pipe(replace('<link rel="stylesheet" href="css/media-queries-kinetic.css">', ''))
        .pipe(gulp.dest('src/compiled/'));
 });
 

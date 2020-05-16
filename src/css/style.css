@@ -6,9 +6,24 @@
   When targeting IE/MSO - trying to overide percentage width pixel width seems to fail in some cases
   Targeting a cell without width defined seems to work
   Overiding percentage padding with pixels seems to work - but may need more testing 
-
   */
-  /** Fix widths for conditional tables */
+ 
+/*
+|--------------------------------------------------------------------------
+|  OFFERS - BUTTON WIDTH
+|-------------------------------------------------------------------------- 
+*/
+    .offers-cta {
+        width: 130px;
+        border-right-width: 0 !important;
+        border-left-width: 0 !important;
+}
+
+/*
+|--------------------------------------------------------------------------
+|  IE & MSO FIXES
+|-------------------------------------------------------------------------- 
+*/
   .ie-target .container__td,
   .mso-target .container__td {
       padding-right: 20px !important; 
@@ -20,13 +35,21 @@
 |  BORDER RADIUS ENHANCEMENTS
 |-------------------------------------------------------------------------- 
 */
-.mod-2col-fluid .inner-container:first-child {
+.mod-2col-scale .inner-container:first-child {
     border-radius: 6px 6px 0 0; 
     border-radius: 6px 6px 0 0; 
     -moz-border-radius: 6px 6px 0 0; 
 }
-.mod-2col-fluid .inner-container:last-child {
+.mod-2col-scale .inner-container:last-child {
     border-radius: 0 0 6px 6px; 
     -webkit-border-radius: 0 0 6px 6px; 
     -moz-border-radius: 0 0 6px 6px; 
 }
+
+
+/*
+|--------------------------------------------------------------------------
+|  APPLE BLUE LINKS - HARRYS RESET
+|-------------------------------------------------------------------------- 
+*/
+.smart-666666 a {color:#666666 !important; text-decoration: none !important;}

@@ -14,6 +14,14 @@ body
 {
     padding: 0;
 }
+.body-tag {
+    -webkit-font-smoothing: antialiased; 
+    margin:0;
+    padding:0;
+    min-width:100%;
+    background-color: #ffffff !important;
+    mso-line-height-rule: exactly;
+}
 img
 {
     line-height: 100%;
@@ -30,7 +38,7 @@ img
 table.wrapper
 {
     padding: 0;
-    background-color: #f7f7f8 !important;
+    background-color: #ffffff !important;
     width:100%
 }
 .wrapper__td {
@@ -85,90 +93,116 @@ div.mob-nav-hamburger {
 |-------------------------------------------------------------------------- 
 */
 
-.h1, 
-.h1 a{
-    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
-    font-size: 36px !important;
-    line-height: 52px !important;
-    letter-spacing: 1.25px !important;
-    font-weight: normal !important;
+.h1 {
+    font-size: 33px; 
+    line-height: 52px; 
+    letter-spacing: 0.5px; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    color: #185674; 
+    font-weight:normal
 }
-.h2, 
-.h2 a{
-    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
-    font-size: 28px !important;
-    line-height: 42px !important;
-    letter-spacing: 1px !important;
-    font-weight: normal !important;
-    color: #263645;
+.h2 {
+    font-size: 26px; 
+    line-height: 42px; 
+    letter-spacing: 0.25px; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    color: #185674;    /*   color: #263645; */
+    font-weight:normal
 }
-.h3, .h3 a{
-    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
-    font-size: 24px !important;
-    line-height: 36px !important;
-    letter-spacing: 1.25px !important;
-    font-weight: normal !important;
-    color: #263645;
-
+.h3 {
+    font-size: 23px; 
+    line-height: 36px;
+    letter-spacing: 0.25px; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+    color: #185674; 
+    font-weight:normal;
 }
-.subheader, 
-.subheader a{
-    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
-    font-size: 12px !important;
-    line-height: 24px !important;
-    letter-spacing: 2.3px !important;
-    font-weight: bold !important;
+.subheader {
+   font-size: 11px; 
+   line-height: 24px; 
+   letter-spacing: 2.6px; 
+   font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+   color: #185674; 
+   font-weight:normal; 
+   text-transform: uppercase;
 }
-.body, 
-.body a{
-    font-family: 'Museo Sans', Verdana, Geneva, sans-serif !important;
-    font-size: 15px !important;
-    line-height: 28px !important;
-    letter-spacing: 0.75px !important;
-    color: #666666;
+.body{
+    font-size: 14px; 
+    line-height: 30px; 
+    letter-spacing: 0px; 
+    font-family: Verdana, Geneva, sans-serif; 
+    color: #868686; 
+    font-weight:normal
 }
-.note, 
-.note a{
-    font-family: 'Museo Sans', Verdana, Geneva, sans-serif !important;
-    letter-spacing: 0.4px !important;
-    font-size: 13px;
-    line-height: 24px !important;
-    color: #868686;
+.note{
+    font-size: 13px; 
+    line-height: 20px; 
+    letter-spacing: 0.4px; 
+    font-family: Verdana, Geneva, sans-serif; 
+    color: #868686; 
+    font-weight:normal;
 
 }
 .note.note-title , 
 .note.note-title a {
    color: #666666;
-
+   text-decoration: none;
 }
 .large-cta,
-.large-cta a{
-    font-family: 'Brandon Grotesque', Futura, Trebuchet MS, Arial, sans-serif !important;
-    font-size: 14px !important;
-    letter-spacing: 2px !important;
-    border-top-width: 14px !important;
-    border-bottom-width: 10px !important;
-    border-right-width: 30px !important;
-    border-left-width: 30px !important;
-    font-weight: bold !important;   
-    letter-spacing: 10px !important;   
+.large-cta a {
+    font-size: 13px; 
+    letter-spacing: 0.16em; 
+    line-height:20px; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    color: #FFFFFF; 
+    font-weight: normal; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    background-color: #E34F30; 
+    border-top: 12px solid #E34F30;
+    border-bottom: 12px solid #E34F30; 
+    border-right: 29px solid #E34F30; 
+    border-left: 29px solid #E34F30; 
+    display: inline-block;
+}
+.offers-cta-alt {
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px;
+    width:130px;
+    background-color: #E34F30; 
+}
+.offers-cta-alt a {
+    font-size: 13px; 
+    letter-spacing: 0.16em; 
+    line-height:20px; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    color: #FFFFFF; 
+    font-weight: normal; 
+    text-decoration: none;
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+    padding: 12px 18px; 
+    border: 1px solid #E34F30; 
+    display: inline-block;
 }
 .h1 a, 
-.h1-l a,
 .h2 a, 
 .h3 a, 
-.h4 a, 
-.article-text a,
-.quote-text a,
-#editors-text a,
-.pid-title a, 
-.pid-text a,
-.fr-text a,
-.ms-text a 
+.subheader a, 
 {
+    color: #185674; 
     text-decoration: none;
-    color: #2b2b2b;
 }
+.body a, 
+.note a {
+    color: #868686; 
+    text-decoration: none;
+}
+
 .footer-text
 {
     padding: 0 0 13px 0;
@@ -181,7 +215,7 @@ div.mob-nav-hamburger {
 
 /*
 |--------------------------------------------------------------------------
-|  1COL - HERO
+| HERO - 1COL
 |-------------------------------------------------------------------------- 
 */
 .hero .container__td
@@ -210,11 +244,11 @@ div.mob-nav-hamburger {
 }
 /*
 |--------------------------------------------------------------------------
-|  2 COL FLUID
+|  CUSTOMER PRODUCTS - 2COL | SCALE
 |-------------------------------------------------------------------------- 
 */
 /**  overide container td padding here if required  e.g. for full width img */
-.mod-2col-fluid .container__td
+.mod-2col-scale .container__td
 {
     padding-top: 0;
     padding-bottom: 0;
@@ -225,41 +259,41 @@ div.mob-nav-hamburger {
 {
     padding-top: 40px;
 } */
-.mod-2col-fluid .inner-container
+.mod-2col-scale .inner-container
 {
     padding: 0;
     border-bottom: 2px solid #f7f7f7;
 
 }
 
-.mod-2col-fluid .inner-container__td
+.mod-2col-scale .inner-container__td
 {
     padding: 10px 0;
 }
 /** LEFT COL ----------------------------------------------- */
-.mod-2col-fluid .col-l
+.mod-2col-scale .col-l
 {
     padding: 0;
     width: 36.95652173913% /**  170px; convert to perc*/
 }
 
-.mod-2col-fluid .col-l__td
+.mod-2col-scale .col-l__td
 {
     padding: 0 20px;
     height: 130px 
 }
-.mod-2col-fluid .col-l .content
+.mod-2col-scale .col-l .content
 {
     padding: 0;
 }
 /** RIGHT COL ----------------------------------------------- */
-.mod-2col-fluid .col-r
+.mod-2col-scale .col-r
 {
     padding: 0;
     width: 63.04347826087%  /**  290px; convert to perc*/
 }
 
-.mod-2col-fluid .col-r__td
+.mod-2col-scale .col-r__td
 {
     width: 100%;
     padding: 0 20px 0 10px;
@@ -267,24 +301,24 @@ div.mob-nav-hamburger {
     text-align: left;
     height: 130px 
 } 
-.mod-2col-fluid .content-container
+.mod-2col-scale .content-container
 {
     padding: 0;
         vertical-align: middle;
 
 }
-.mod-2col-fluid .content-container__td
+.mod-2col-scale .content-container__td
 {
     padding: 0;
 } 
-.mod-2col-fluid .col-r .content
+.mod-2col-scale .col-r .content
 {
     padding: 0;
 }
 
 /*
 |--------------------------------------------------------------------------
-|  TOTAL
+|  TOTAL - 1COL
 |-------------------------------------------------------------------------- 
 */
 #total .container__td 
@@ -294,7 +328,7 @@ div.mob-nav-hamburger {
  }
 /*
 |--------------------------------------------------------------------------
-|  2 COL STACK
+|  SHAVE GEL SUBSCRIBE - 2COL | STACK | UNEVEN 
 |-------------------------------------------------------------------------- 
 */
 .mod-2col-stack .container__td
@@ -320,69 +354,70 @@ div.mob-nav-hamburger {
     font-size: 0;
     text-align: center;
 }
+
 /** LEFT COL -------------------------------------------------- */
-.mod-2col-stack .col-l
-{
-   
-/*     width: 51.88679245283%;
- */}
-.mod-2col-stack .col-l__td
-{
-    padding: 0 ;
+
+div.column-left {
+    display: inline-block; 
+    max-width: 280px; 
+    vertical-align: 
+    middle; width: 100%;
 }
 .mod-2col-stack .content-container
 {
     padding: 0;
 }
-
+.mod-2col-stack .content-container
+{
+}
 .mod-2col-stack .content-container__td
 {
-    padding: 25px 21px 25px;
-}
-.mod-2col-stack .col-l .content
-{
-    padding: 0;
 }
 
 /** RIGHT COL ----------------------------------------------- */
-.mod-2col-stack .col-r
-{
-    width: 48.11320754717%;
+
+div.column-right {
+    display: inline-block; 
+    max-width: 279px; /* reduce for chrome bug? */
+    vertical-align: 
+    middle;
+    width: 100%
 }
-.mod-2col-stack .col-r__td
+.mod-2col-stack .column-right .content-container__td
 {
-    width: 100%;
-    padding: 0;
-    padding-top: 18px;
+    padding:0 20px;
+}
 
-    text-align: left;
-    vertical-align: middle;
-} 
-
+.mod-2col-stack .h3 {
+    padding-bottom: 10px
+}
+.mod-2col-stack .body {
+    padding-bottom:25px
+}
 /*
 |--------------------------------------------------------------------------
-|  3 COL STACK FURTHER STORIES
+|  OFFERS - 3COL | STACK
 |-------------------------------------------------------------------------- 
 */
-.mod-3col-stack-fr .container__td {
+.mod-3col-stack .container__td {
      padding-top: 0;
     padding-bottom:42px;
     padding-left: 0; 
    padding-right: 0; 
     width:100%;
 }
-.mod-3col-stack-fr .inner-container__t {
+.mod-3col-stack .inner-container__t {
     max-width:556px;
     width:100%
 }
-.mod-3col-stack-fr .inner-container__td {
+.mod-3col-stack .inner-container__td {
     font-size:0;
-    padding: 0;" 
+    padding: 0;
 }
 
-.mod-3col-stack-fr div.column-one,
-.mod-3col-stack-fr div.column-two,
-.mod-3col-stack-fr div.column-three{
+.mod-3col-stack div.column-one,
+.mod-3col-stack div.column-two,
+.mod-3col-stack div.column-three{
     display:inline-block;
     max-width:33.2222%; /*  rounded down from 33.3333%; because chrome stacking them */
     min-width: 161px;  /*  rounded down from 200px because chrome stacking them */
@@ -390,36 +425,41 @@ div.mob-nav-hamburger {
     width:100%;
 }
 
-.mod-3col-stack-fr .column-one__td,
-.mod-3col-stack-fr .column-two__td,
-.mod-3col-stack-fr .column-three__td  {
+.mod-3col-stack .column-one__td,
+.mod-3col-stack .column-two__td,
+.mod-3col-stack .column-three__td  {
     padding:  10px;
 }
 
-.mod-3col-stack-fr .column-one__td table,
-.mod-3col-stack-fr .column-two__td table,
-.mod-3col-stack-fr .column-three__td table  {
+.mod-3col-stack .column-one__td table,
+.mod-3col-stack .column-two__td table,
+.mod-3col-stack .column-three__td table  {
     border-radius: 6px; 
     -webkit-border-radius: 6px; 
     -moz-border-radius: 6px; 
 }
 
-.mod-3col-stack-fr .fr-title {
+.mod-3col-stack .fr-title {
     width:100%;
     padding: 12px 20px 0;
 }
 
-.mod-3col-stack-fr .fr-divider {
+.mod-3col-stack .fr-divider {
     width:100%;
     padding: 0 20px 6px;
 }
 
-.mod-3col-stack-fr .fr-cta {
+.mod-3col-stack .fr-cta {
     width:100%;
     padding: 6px 20px 20px;
     border-bottom: 1px solid #cccccc;
 }
-
+.offers-title {
+    padding-bottom: 8px;
+}
+.offers-text {
+    padding-bottom: 25px;
+}
 /*
 |--------------------------------------------------------------------------
 |  REFER A FRIEND

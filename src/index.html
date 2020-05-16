@@ -21,6 +21,7 @@
 <title>Harry's Shave Plan- Your Next Box</title>
 <link rel="stylesheet" href="css/resets.css">
 <link rel="stylesheet" href="css/inline.css">
+<link rel="stylesheet" href="css/fonts.css"> 
 <link rel="stylesheet" href="css/style.css"> 
 <link rel="stylesheet" href="css/media-queries.css"> 
 <link rel="stylesheet" href="css/media-queries-kinetic.css"> 
@@ -33,20 +34,20 @@
   outlook body breaks gulp watch so pull at end of development
   ************************************************************** -->
   {% block outlook %}{% endblock %}
-  <!--[if !(gte mso 9)|!IE]>  <!-- -->
-  <body class="body" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff" style="margin:0;padding:0;min-width:100%;background-color: #ffffff !important;mso-line-height-rule: exactly; ">
-       <!-- PREHEADER start -->
-    <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">We hope you're enjoying shaving with Harry's. We’ll be shipping your fresh supplies in a couple of days. Remember, your Shave Plan guarantees you're getting the best savings on Harry's supplies  - plus free shipping, always.</div>
-    <!-- PREHEADER end -->
-    <!--<![endif]-->
+<!--[if !(gte mso 9)|!IE]>  <!-- -->
+<body class="body-tag" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff" >
+     <!-- PREHEADER start -->
+  <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">We hope you're enjoying shaving with Harry's. We’ll be shipping your fresh supplies in a couple of days. Remember, your Shave Plan guarantees you're getting the best savings on Harry's supplies  - plus free shipping, always.</div>
+  <!-- PREHEADER end -->
+  <!--<![endif]-->
 
 
 <!-- HEADER -->
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
     <tr>
         <td bgcolor="#FFFFFF" align="center" style="padding: 20px;">
-            <a href="http://harrys.com?utm_source=penpal&utm_medium=email&utm_campaign={{campaign.${name}}}{{campaign.${message_name}}}">
-                <img src="http://cdn.harrys.com/us-email/lifecycle/welcome/logo.png" width="115" height="20" style="font-size: 13px; font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;  color: #065778; width:115px; height:20px; display:block;" alt="HARRY'S" border="0">
+            <a href="">
+                <img src="http://cdn.harrys.com/us-email/lifecycle/welcome/logo.png" width="115" height="20" style="width:115px; height:20px; display:block;" alt="HARRY'S" border="0">
             </a>
         </td>
     </tr>
@@ -61,380 +62,358 @@
       <tr>
         <td class="wrapper__td" width="100%" valign="top" bgcolor="#f7f7f7" >
           <!--[if (gte mso 9)|(IE)]>
-            <table width="680" align="center"  border="0" cellspacing="0" cellpadding="0" style="width: 680px">
+            <table width="600" align="center"  border="0" cellspacing="0" cellpadding="0" style="width: 600px">
               <tr>
                 <td>
                 <![endif]-->
-
         
-                <!-- HERO start -->
-                <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-                  <tr class="hero" >
-                    <td class="container__td" valign="top" bgcolor="#f7f7f7" align="center" >
-                      <table class="content"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
-                        <!--  Package Pic -->
-                        <tr>
-                          <td id="package" align="center" valign="top" width="100%" >
-                            <a href="https://www.harrys.com/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fpackage.jpg?alt=media&token=2bfb93f2-1571-4c90-8cf4-ca6f88cf7e8a" alt="" width="93" height="auto" style="border: 0; display: block; height: auto; line-height: 100%; max-width: 93px; outline: none; text-decoration: none; width: 93px;"></a></td>
-                        </tr>
-                        <!-- / Package Pic  -->
+                  <!-- HERO start -->
+                  <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+                    <tr class="hero">
+                      <td class="container__td" valign="top" bgcolor="#f7f7f7" align="center" >
+                        <table class="content"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
+                          
+                          <!--  Package Img -->
+                          <tr>
+                            <td id="package" align="center" valign="top" width="100%" >
+                              <a href="https://www.harrys.com/" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fpackage.jpg?alt=media&token=2bfb93f2-1571-4c90-8cf4-ca6f88cf7e8a" alt="" width="93" height="auto" style="border: 0; display: block; height: auto; line-height: 100%; max-width: 93px; outline: none; text-decoration: none; width: 93px;"></a></td>
+                          </tr>
+                          <!-- / Package Img  -->
 
-                        <tr>
-                          <td align="center" valign="top" width="100%" style="width:100%" >
-                          <table class="width-100percent" align="center" border="0" cellpadding="0" cellspacing="0" width="86%" style="width: 86%">
-                             <!--  Ship Date -->
-                              <tr >
-                                <td class="hero-title h2" align="center">Your first box ships on August&nbsp;8th.</td>
-                              </tr>
-                               <!-- / Ship Date -->
-                      
-                               <!--  Message  -->
-                              <tr >
-                                <td class="hero-text body" align="center">Hope you’re enjoying your first few shaves with&nbsp;Harry’s. <br/>We’re about to ship you fresh supplies, so you can continue your Shave&nbsp;Plan.</td>
-                              </tr>
-                               <!--  / Message  -->
-                            </table>
-                          </td>
-                        </tr>
+                          <tr>
+                            <td align="center" valign="top" width="100%" style="width:100%" >
+                              <table class="width-100percent" align="center" border="0" cellpadding="0" cellspacing="0" width="86%" style="width: 86%">
 
-                      </table>
+                                 <!--  Ship Date -->
+                                <tr >
+                                  <td class="hero-title h2" align="center">Your first box ships on August&nbsp;8th.</td>
+                                </tr>
+                                 <!-- / Ship Date -->
+                        
+                                 <!--  Hero Message  -->
+                                <tr >
+                                  <td class="hero-text body" align="center">Hope you’re enjoying your first few shaves with&nbsp;Harry’s. <br/>We’re about to ship you fresh supplies, so you can continue your Shave&nbsp;Plan.</td>
+                                </tr>
+                                 <!--  / Hero Message  -->
+
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
-                <!-- HERO end  -->
+                  <!-- HERO end  -->
 
+                  <!-- CUSTOMER PRODUCTS start -->
+                  <!--- 2COL | SCALE | (Img|Txt) -->
+                  <!--- Fixed width in attribute & mso. Perc width in CSS -->
+                  <!--- pad | img pad left | img | text-pad | text | text-pad | pad -->
+                  <!--- 36 | 34 | 126 | 34 | 408 | 34 | 36 -->
+                  <!--- 20 | 0  | 130 | 30 | 260 | 0  | 20 -->
 
-              <!-- 2 Column (Img|Txt) -->
-              <!--- Fixed width in attribute & mso. Perc width in CSS -->
-              <!--- pad | img pad left | img | text-pad | text | text-pad | pad -->
-              <!--- 36 | 34 | 126 | 34 | 408 | 34 | 36 -->
-              <!--- 20 | 0  | 130 | 30 | 260 | 0  | 20 -->
-
-              <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-                <tr class="mod-2col-fluid" id="first">
-                  <td class="container__td" align="center" bgcolor="#f7f7f7">
-                      <!--[if (gte mso 9)|(IE)]>
-                      <table border="0" cellspacing="0" cellpadding="0" align="center" width="460" style="width: 460px;">
-                        <tr>
-                          <td align="center" valign="top" width="460" style="width: 460px;">
-                          <![endif]-->
-
-
-                            <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
-                              <tr>
-                                <td class="inner-container__td" align="left" valign="top">
-
-                                  <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
-                                    <tr>
-                                      <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
-                                        
-                                        <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
-                                          <tr>
-                                            <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-blades.jpg?alt=media&token=bf72471f-435b-43bf-91ee-b3a3944d14be" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
-                                    <!--[if (gte mso 9) | (IE)]>
-                                    </td>
-                                    <td width=" 290" style="width: 290px">
-                                    <![endif]-->
-                                    <!--[if false]> </td></tr></table><![endif]-->
-                                    <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
-                                      <tr>
-                                        <td class="col-r__td" align="center" width="100%"> 
-                                          <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
-                                            <tr>
-                                              <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;" colspan="2">
-                                                
-                                                <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
-                                                  <tr>
-                                                    <td class="body" align="left" >Blades Plan</td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td class="note" align="left" >8 x Harry's Blades</td>
-                                                    </tr>
-                                                </table>
-                                              </td>
-                                            </tr> 
-
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                               </table>
-
-
-
-
-                                <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
-                              <tr>
-                                <td class="inner-container__td" align="left" valign="top">
-
-                                  <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
-                                    <tr>
-                                      <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
-                                        
-                                        <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
-                                          <tr>
-                                            <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-blades.jpg?alt=media&token=bf72471f-435b-43bf-91ee-b3a3944d14be" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
-                                    <!--[if (gte mso 9) | (IE)]>
-                                    </td>
-                                    <td width=" 290" style="width: 290px">
-                                    <![endif]-->
-                                    <!--[if false]> </td></tr></table><![endif]-->
-                                    <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
-                                      <tr>
-                                        <td class="col-r__td" align="center" width="100%"> 
-                                          <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
-                                            <tr>
-                                              <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;" colspan="2">
-                                                
-                                                <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
-                                                  <tr>
-                                                    <td class="body" align="left" >Blades Plan</td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td class="note" align="left" >8 x Harry's Blades Lorem Ipsum Des etiam entenddn</td>
-                                                    </tr>
-                                                </table>
-                                              </td>
-                                            </tr> 
-
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                               </table>
-
-
-
-
-
-                          <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
+                  <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+                    <tr class="mod-2col-scale" id="first">
+                      <td class="container__td" align="center" bgcolor="#f7f7f7">
+                          <!--[if (gte mso 9)|(IE)]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" width="460" style="width: 460px;">
                             <tr>
-                              <td class="inner-container__td" align="left" valign="top">
+                              <td align="center" valign="top" width="460" style="width: 460px;">
+                              <![endif]-->
 
-                                <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
+                               <!-- PRODUCT start -->
+                                <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
                                   <tr>
-                                    <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
-                                      
-                                      <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                    <td class="inner-container__td" align="left" valign="top">
+
+                                      <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
                                         <tr>
-                                          <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-psb.jpg?alt=media&token=ca8c0dfe-2331-4d40-92dd-99f8a27b9689" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
+                                          <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
+                                            
+                                            <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                              <tr>
+                                                <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-blades.jpg?alt=media&token=bf72471f-435b-43bf-91ee-b3a3944d14be" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
+                                        <!--[if (gte mso 9) | (IE)]>
+                                        </td>
+                                        <td width=" 290" style="width: 290px">
+                                        <![endif]-->
+                                        <!--[if false]> </td></tr></table><![endif]-->
+                                      <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                        <tr>
+                                          <td class="col-r__td" align="center" width="100%"> 
+                                            <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
+                                              <tr>
+                                                <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;" >
+                                                  
+                                                  <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                                    <tr>
+                                                      <td class="body" align="left" >Blades Plan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="note" align="left" >8 x Harry's Blades</td>
+                                                      </tr>
+                                                  </table>
+                                                </td>
+                                              </tr> 
+
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                 </table>
+                                 <!-- PRODUCT end -->
+
+                                 <!-- PRODUCT start -->
+                                 <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
+                                  <tr>
+                                    <td class="inner-container__td" align="left" valign="top">
+
+                                      <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                        <tr>
+                                          <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
+                                            
+                                            <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                              <tr>
+                                                <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-blades.jpg?alt=media&token=bf72471f-435b-43bf-91ee-b3a3944d14be" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
+                                        <!--[if (gte mso 9) | (IE)]>
+                                        </td>
+                                        <td width=" 290" style="width: 290px">
+                                        <![endif]-->
+                                        <!--[if false]> </td></tr></table><![endif]-->
+                                      <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                        <tr>
+                                          <td class="col-r__td" align="center" width="100%"> 
+                                            <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
+                                              <tr>
+                                                <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;">
+                                                  
+                                                  <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                                    <tr>
+                                                      <td class="body" align="left" >Lorem Ipsum</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="note" align="left" >12 x Lorem Ipsum Des etiam sed mecum bellum trifectum est</td>
+                                                      </tr>
+                                                  </table>
+                                                </td>
+                                              </tr> 
+
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                 </table>
+                                 <!-- PRODUCT end -->
+
+                                <!-- PRODUCT start -->
+                                <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="460" bgcolor="#ffffff" style="max-width: 460px;width:100%">
+                                  <tr>
+                                    <td class="inner-container__td" align="left" valign="top">
+
+                                      <table class="col-l" width="170" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                        <tr>
+                                          <td class="col-l__td" align="left" width="100%" style="font-size:0;"> 
+                                            
+                                            <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                              <tr>
+                                                <td class="img" align="left" valign="top" width="100%" style="width:100%;"><a href="#LINK" target="_blank"><img src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-psb.jpg?alt=media&token=ca8c0dfe-2331-4d40-92dd-99f8a27b9689" width="130" style="margin:0;padding: 0px;border:none;display:block;;max-width: 130px;width: 100%" border="0" alt=""></a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
+                                      <!--[if (gte mso 9) | (IE)]>
+                                      </td>
+                                      <td width="290" style="width: 290px">
+                                      <![endif]-->
+                                      <!--[if false]> </td></tr></table><![endif]-->
+                                      <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                        <tr>
+                                          <td class="col-r__td" align="center" width="100%"> 
+                                            <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
+                                              <tr>
+                                                <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;" >
+                                                  
+                                                  <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
+                                                    <tr>
+                                                      <td class="body" align="left" >Face Lotion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="note" align="left" >Regular (1.7oz)</td>
+                                                      </tr>
+                                                  </table>
+                                                </td>
+                                              </tr> 
+
+                                            </table>
                                           </td>
                                         </tr>
                                       </table>
                                     </td>
                                   </tr>
                                 </table>
-                                <!--[if false]> <table style="display:none;"><tr> <td > <![endif]-->
-                                  <!--[if (gte mso 9) | (IE)]>
-                                  </td>
-                                  <td width="290" style="width: 290px">
-                                  <![endif]-->
-                                  <!--[if false]> </td></tr></table><![endif]-->
-                                  <table class="col-r" width="290" border="0" cellpadding="0" cellspacing="0" align="left" >
-                                    <tr>
-                                      <td class="col-r__td" align="center" width="100%"> 
-                                        <table class="content-container" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%">
-                                          <tr>
-                                            <td class="content-container__td" align="left" valign="top" style="font-size:0;padding: 0;" colspan="2">
-                                              
-                                              <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%">
-                                                <tr>
-                                                  <td class="body" align="left" >Face Lotion</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="note" align="left" >Regular (1.7oz)</td>
-                                                  </tr>
-                                              </table>
-                                            </td>
-                                          </tr> 
+                                 <!-- PRODUCT end -->
 
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <!--[if (gte mso 9)|(IE)]>
-                          </td>
-                        </tr>
-                      </table>
-                    <![endif]-->
-
-                    </td>
-                  </tr>
-                </table>
-                <!-- /2 Column (Img|Txt) -->
-        
-            
-
-
-                <!-- TOTAL start -->
-                <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-                  <tr id="total" >
-                    <td class="container__td" valign="top" bgcolor="#f7f7f7" align="center" >
-                      <table class="content"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
-                        <tr>
-                          <td align="center" valign="top" width="100%" style="width:100%" class="note" >$15 total, free shipping</td>
-                        </tr>
-                      </table>
-                      </td>
-                    </tr>
-                  </table>
-                <!-- TOTAL end  -->
-
-
-                
-                <!-- 2 UnEven Columns : BEGIN -->
-                <!-- 552 | 200 | content-pad 10|10 | 180 |  image-inset 6|6 | 168 || 352 |  -->
-             <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-
-                <tr class="mod-2col-stack">
-                  <td class="container__td" bgcolor="#f7f7f7" align="center" height="100%" valign="top" width="100%" >
-                    <!--[if (gte mso 9)|(IE)]>
-                      <table border="0" cellspacing="0" cellpadding="0" align="center" width="560" style="width: 560px;">
-                        <tr>
-                          <td align="center" valign="top" width="280" style="width: 280px;">
-                          <![endif]-->
-                          <table class="inner-container" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" >
-                            <tr>
-                              <td class="inner-container__td" align="center" >
                                 <!--[if (gte mso 9)|(IE)]>
-                                  <table width="100%"  border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
-                                    <tr>
-                                      <td width="280"  valign="top" style="width: 280px;">
-                                      <![endif]-->
-                                      <div class="column-left" style="display: inline-block; max-width: 280px; vertical-align: middle; width: 100%;">
-                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; color: #000000; font-family: sans-serif;width: 100%;" >
-                                          <tr>
-                                            <td class="content-pad" valign="top"  align="center" >
-                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="color: #000000; font-family: sans-serif;width: 100%;">
-                                                <tr>
-                                                  <td align="center" valign="top" width="100%" style="width:100%">
-                                                    <a href="######"" target="_blank"><img class="img-thumb" src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fsp-shave-gel.jpg?alt=media&token=cc876da2-60a9-4c0c-a314-f53396840589" width="280" style="margin:0; padding:0; border:none; display:block;max-width: 100%; width:280px" border="0" alt=""></a></td>
-                                                </tr>
-                                               
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <!--[if (gte mso 9)|(IE)]>
-                                      </td><td width="280"  style="width: 280px;"> 
-                                      <![endif]-->
-                                      <div class="column-right" style="display: inline-block; max-width: 279px; vertical-align: middle; width: 100%;">
-                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; color: #000000; font-family: sans-serif;width: 100%;" >
-                                          <tr>
-
-                                            <td class="content-pad" valign="top" align="center" style="padding:0 20px;">
-                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="color: #000000; font-family: sans-serif;width: 100%;">
-                                                 <tr >
-                                                  <td class="h3 align-center" align="left" style="padding-bottom:10px">Add Shave Gel<br/> to your plan.</td>
-                                                </tr>
-                                                <tr >
-                                                  <td class="body align-center" align="left"  style="padding-bottom:25px">It cushions and protects for a lose, comfortable shave.</td>
-                                                </tr>
-                                                 <!-- ORANGE CTA -->
-                                                <tr>
-                                                    <td class="align-center" align="left">
-                                                    <!--[if mso]>
-                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="5%" strokecolor="#E34F30" fillcolor="#E34F30">
-                                                    <w:anchorlock/>
-                                                    <center>
-                                                    <![endif]-->
-                                                          
-                                                          <a class="large-cta" href="http://harrys.com" style="font-size: 13px; letter-spacing: 0.16em; line-height:20px; font-family: Futura, Trebuchet MS, Arial, sans-serif; color: #FFFFFF; font-weight: normal; text-decoration: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #E34F30; border-top: 12px solid #E34F30; border-bottom: 12px solid #E34F30; border-right: 29px solid #E34F30; border-left: 29px solid #E34F30; display: inline-block;"> SUBSCRIBE</a>
-                                                       
-                                                    <!--[if mso]>
-                                                    </center>
-                                                    </v:roundrect>
-                                                    <![endif]-->
-                                                    </td>
-                                                </tr>
-                                                <!-- ORANGE CTA END -->
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </div>
-                                      <!--[if (gte mso 9)|(IE)]>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                <![endif]-->
                               </td>
                             </tr>
                           </table>
-                          <!--[if (gte mso 9)|(IE)]>
-                          </td>
-                        </tr>
-                      </table>
-                    <![endif]-->
-                  </td>
-                </tr>
-              </table>
-                <!-- 2 Even Columns : END -->
+                        <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  <!-- CUSTOMER PRODUCTS end -->
+        
+                  <!-- TOTAL start -->
+                  <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+                    <tr id="total" >
+                      <td class="container__td" valign="top" bgcolor="#f7f7f7" align="center" >
+                        <table class="content"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
+                          <tr>
+                            <td align="center" valign="top" width="100%" style="width:100%" class="note" >$15 total, free shipping</td>
+                          </tr>
+                        </table>
+                        </td>
+                      </tr>
+                    </table>
+                  <!-- TOTAL end  -->
+
+                <!-- SHAVE GEL SUBSCRIBE start -->
+                <!--- 2COL | STACK | UNEVEN | (Img|Txt) -->
+                <!--- 552 | 200 | content-pad 10|10 | 180 |  image-inset 6|6 | 168 || 352 |  -->
+                 <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
+                    <tr class="mod-2col-stack">
+                      <td class="container__td" bgcolor="#f7f7f7" align="center" height="100%" valign="top" width="100%" >
+                        <!--[if (gte mso 9)|(IE)]>
+                          <table border="0" cellspacing="0" cellpadding="0" align="center" width="560" style="width: 560px;">
+                            <tr>
+                              <td align="center" valign="top" width="280" style="width: 280px;">
+                              <![endif]-->
+                              <table class="inner-container" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" >
+                                <tr>
+                                  <td class="inner-container__td" align="center" >
+                                    <!--[if (gte mso 9)|(IE)]>
+                                      <table width="100%"  border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+                                        <tr>
+                                          <td width="280"  valign="top" style="width: 280px;">
+                                          <![endif]-->
+                                          <div class="column-left" >
+                                            <table class="content-container" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0;width: 100%;" >
+                                              <tr>
+                                                <td class="content-container__td" valign="top"  align="center" >
+                                                  <table class="content" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
+                                                    <tr>
+                                                      <td align="center" valign="top" width="100%" style="width:100%">
+                                                        <a href="######"" target="_blank"><img class="img-thumb" src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fsp-shave-gel.jpg?alt=media&token=cc876da2-60a9-4c0c-a314-f53396840589" width="280" style="margin:0; padding:0; border:none; display:block;max-width: 100%; width:280px" border="0" alt=""></a></td>
+                                                    </tr>
+                                                   
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <!--[if (gte mso 9)|(IE)]>
+                                          </td><td width="280"  style="width: 280px;"> 
+                                          <![endif]-->
+                                          <div class="column-right" >
+                                            <table class="content-container" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0;font-family: sans-serif;width: 100%;" >
+                                              <tr>
+
+                                                <td class="content-container__td"  valign="top" align="center" >
+                                                  <table class="content"  border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;">
+                                                     <tr >
+                                                      <td class="h3 align-center" align="left" >Add Shave Gel<br/> to your plan.</td>
+                                                    </tr>
+                                                    <tr >
+                                                      <td class="body align-center" align="left" >It cushions and protects for a lose, comfortable shave.</td>
+                                                    </tr>
+                                                     <!-- ORANGE CTA -->
+                                                    <tr>
+                                                        <td class="align-center" align="left">
+                                                        <!--[if mso]>
+                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="5%" strokecolor="#E34F30" fillcolor="#E34F30">
+                                                        <w:anchorlock/>
+                                                        <center>
+                                                        <![endif]-->
+                                                              
+                                                              <a class="large-cta" href="http://harrys.com" > SUBSCRIBE</a>
+                                                           
+                                                        <!--[if mso]>
+                                                        </center>
+                                                        </v:roundrect>
+                                                        <![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ORANGE CTA END -->
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    <![endif]-->
+                                  </td>
+                                </tr>
+                              </table>
+                              <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- SHAVE GEL SUBSCRIBE start -->
 
 
 
 
-                   <!-- OFFERS start -->
+
+                <!-- OFFERS start -->
                 <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-                  <tr class="hero" >
+                  <tr class="offers" >
                     <td class="container__td" valign="top" bgcolor="#f7f7f7" align="center" >
                       <table class="content"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%">
-                       
-
                              <!--  Ship Date -->
                               <tr >
-                                <td class="hero-title h3" align="center">Add more to your next box.</td>
+                                <td class="offers-title h3" align="center">Add more to your next box.</td>
                               </tr>
                                <!-- / Ship Date -->
                       
                                <!--  Message  -->
                               <tr >
-                                <td class="hero-text body" align="center">Make a one-time purchase that will ship in your next box.</td>
+                                <td class="offers-text body" align="center">Make a one-time purchase that will ship in your next box.</td>
                               </tr>
                                <!--  / Message  -->
-                           
                       </table>
                       </td>
                     </tr>
-                  </table>
-                <!-- OFFERS end  -->
-
-
-
-
-
-
-
- 
-  <!-- READ MORE start -->
-                   <table class="container" width="600" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f7f7f7" >
-
                     </tr>
                       <!-- 3 COL start -->
-                      <tr class="mod-3col-stack-fr">
+                      <tr class="mod-3col-stack">
                         <td class="container__td" align="center" height="100%" valign="top" width="100%" bgcolor="#f7f7f7">
                           <!--[if (gte mso 9)|(IE)]>
                             <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px">
@@ -450,7 +429,7 @@
                                             <td align="left" valign="top" width="200" style="width:200px">
                                             <![endif]-->
                                             <div class="column-one float-l" >
-                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; color: #000000; font-family: sans-serif;width:100%" >
+                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0;width:100%" >
                                                 <tr>
                                                   <td class="column-one__td" valign="top"  align="center" >
                                                     <table class="max-width-none" align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:180px;width:100%" bgcolor="#ffffff">
@@ -460,25 +439,26 @@
                                                           <a href="https://www.mrporter.com/journal/the-tribute/style-lessons-from-the-psychedelic-era/5333?mi_u=${RIID_?c}&mi_ecmp=${CAMPAIGN_ID}&cm_mmc=Email-_-${EMAIL}${SHIPPINGDATE}-_-${REGION}${LANGUAGE_ISO2?upper_case}-_-ReadTheLatest" target="_blank"><img class="align-center" src="https://firebasestorage.googleapis.com/v0/b/campaigndriverdemo.appspot.com/o/harrys-excersise%2Fthumb-truman.jpg?alt=media&token=efb9e8f6-50b5-4c97-ac08-18e880bf5b8d" width="130" style="border: none; display: block; height: auto; line-height: 100%; margin: 0; outline: none; padding: 0; text-decoration: none; max-width: 130px;width: 100%"" border="0" alt="Latest"></a>
                                                         </td>
                                                       </tr>
-                                                        <!-- ORANGE CTA -->
+                                                       <!-- ALT CTA -->
                                                       <tr>
-                                                          <td align="center" valign="top" style="padding: 25px; width: 100%;">
-                                                          <!--[if mso]>
-                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="5%" strokecolor="#E34F30" fillcolor="#E34F30">
-                                                          <w:anchorlock/>
-                                                          <center>
-                                                          <![endif]-->
-                                                                
-                                                                <a class="large-cta" href="http://harrys.com" style="font-size: 13px; letter-spacing: 0.16em; line-height:20px; font-family: Futura, Trebuchet MS, Arial, sans-serif; color: #FFFFFF; font-weight: normal; text-decoration: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #E34F30; border-top: 12px solid #E34F30; border-bottom: 12px solid #E34F30; border-right: 29px solid #E34F30; border-left: 29px solid #E34F30; display: inline-block;"> ADD</a>
-                                                             
-                                                          <!--[if mso]>
-                                                          </center>
-                                                          </v:roundrect>
-                                                          <![endif]-->
+                                                          <td align="center" style="padding: 25px; width: 100%;">
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td align="center">
+                                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                      <td class="offers-cta-alt" align="center" >
+                                                                      <a href="https://litmus.com" target="_blank" >
+                                                                      ADD</a></td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                       
                                                           </td>
                                                       </tr>
-                                                      <!-- ORANGE CTA END -->
-                                                      
+                                                      <!-- ALT CTA END -->
                                                     </table>
                                                      <table class="max-width-none" align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:180px; float: right;width:100%" bgcolor="#f7f7f7" >
 
@@ -498,7 +478,7 @@
                                             <td align="left" valign="top" width="200" style="width:200px">
                                             <![endif]-->
                                             <div class="column-two float-r" >
-                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; color: #000000; font-family: sans-serif;width:100%" >
+                                              <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; width:100%" >
                                                 <tr>
                                                   <td class="column-two__td" valign="top"  align="center" >
                                                     <table class="max-width-none" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:180px;width:100%" bgcolor="#ffffff">
@@ -509,24 +489,26 @@
                                                         </td>
                                                       </tr>
                                                       <!--  / Title  -->
-                                                        <!-- ORANGE CTA -->
+                                                      <!-- ALT CTA -->
                                                       <tr>
                                                           <td align="center" style="padding: 25px; width: 100%;">
-                                                          <!--[if mso]>
-                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="5%" strokecolor="#E34F30" fillcolor="#E34F30">
-                                                          <w:anchorlock/>
-                                                          <center>
-                                                          <![endif]-->
-                                                                
-                                                                <a class="large-cta" href="http://harrys.com" style="font-size: 13px; letter-spacing: 0.16em; line-height:20px; font-family: Futura, Trebuchet MS, Arial, sans-serif; color: #FFFFFF; font-weight: normal; text-decoration: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #E34F30; border-top: 12px solid #E34F30; border-bottom: 12px solid #E34F30; border-right: 29px solid #E34F30; border-left: 29px solid #E34F30; display: inline-block;"> ADD</a>
-                                                             
-                                                          <!--[if mso]>
-                                                          </center>
-                                                          </v:roundrect>
-                                                          <![endif]-->
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td align="center">
+                                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                      <td class="offers-cta-alt" align="center" >
+                                                                      <a href="https://litmus.com" target="_blank" >
+                                                                      ADD</a></td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                       
                                                           </td>
                                                       </tr>
-                                                      <!-- ORANGE CTA END -->
+                                                      <!-- ALT CTA END -->
                                                     </table>
                                                      <table class="max-width-none" align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:180px; float: right;width:100%" bgcolor="#f7f7f7" >
 
@@ -545,7 +527,7 @@
                                             </td>
                                             <td align="left" valign="top" width="200" style="width:200px">
                                             <![endif]-->
-                                            <div class="column-three" >
+                                            <div class="column-three nomob" >
                                               <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing: 0; color: #000000; font-family: sans-serif;width:100%">
                                                 <tr>
                                                   <td class="column-three__td" valign="top" align="center" >
@@ -557,24 +539,26 @@
                                                         </td>
                                                       </tr>
                                                       <!-- / Title  -->
-                                                       <!-- ORANGE CTA -->
+                                                       <!-- ALT CTA -->
                                                       <tr>
                                                           <td align="center" style="padding: 25px; width: 100%;">
-                                                          <!--[if mso]>
-                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:48px;v-text-anchor:middle;width:280px;" arcsize="5%" strokecolor="#E34F30" fillcolor="#E34F30">
-                                                          <w:anchorlock/>
-                                                          <center>
-                                                          <![endif]-->
-                                                                
-                                                                <a class="large-cta" href="http://harrys.com" style="font-size: 13px; letter-spacing: 0.16em; line-height:20px; font-family: Futura, Trebuchet MS, Arial, sans-serif; color: #FFFFFF; font-weight: normal; text-decoration: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #E34F30; border-top: 12px solid #E34F30; border-bottom: 12px solid #E34F30; border-right: 39px solid #E34F30; border-left: 29px solid #E34F30; display: inline-block;"> ADD</a>
-                                                             
-                                                          <!--[if mso]>
-                                                          </center>
-                                                          </v:roundrect>
-                                                          <![endif]-->
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                              <tr>
+                                                                <td align="center">
+                                                                  <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                      <td class="offers-cta-alt" align="center" >
+                                                                      <a href="https://litmus.com" target="_blank" >
+                                                                      ADD</a></td>
+                                                                    </tr>
+                                                                  </table>
+                                                                </td>
+                                                              </tr>
+                                                            </table>
+                                                       
                                                           </td>
                                                       </tr>
-                                                      <!-- ORANGE CTA END -->
+                                                      <!-- ALT CTA END -->
                                                     </table>
                                                     
                                                     <table class="max-width-none" align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:180px; float: right;width:100%" bgcolor="#f7f7f7" >
@@ -605,7 +589,10 @@
                           <![endif]-->
                         </td>
                       </tr>
-                       <!-- / Read more Row 1  -->
+                       <!-- 3 COL start -->
+                    </table>
+                    <!-- OFFERS end -->
+
 
                 <!--[if (gte mso 9)|(IE)]>
                 </td>
@@ -617,64 +604,59 @@
     </table>
     <!-- End Wrapper -->
 
-              <!-- REFER A FRIEND start -->
-   
-                    <table id="refer"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;background-color: #dde9ee" bgcolor="#dde9ee" >
-                      <tr>
-                        <td class="container__td" align="center" valign="top" width="100%" style="width:100%" >
-                         <!--[if (gte mso 9)|(IE)]>
-                          <table width="370" align="center"  border="0" cellspacing="0" cellpadding="0" style="width: 370px">
-                            <tr>
-                              <td>
-                              <![endif]-->
-                              <table class="width-90percent" align="center" border="0" cellpadding="0" cellspacing="0" width="370" style="max-width: 370px;width:100%">
-                                 <!--  Ship Date -->
-                                  <tr >
-                                    <td class="refer-title h2" align="center">This order could be $5&nbsp;less</td>
-                                  </tr>
-                                   <!-- / Ship Date -->
-                          
-                                   <!--  Message  -->
-                                  <tr >
-                                    <td class="refer-text body" align="center">When a friend signs up for a trial, you'll both save $5 off  your next order.</td>
-                                  </tr>
-                                   <!--  / Message  -->
-                                 
-                                </table>
+     <!-- REFER A FRIEND start -->
 
-                                  <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="380"  style="max-width: 380px;width:100%">
-                                      <tr>
-                                        <td class="inner-container__td" align="left" valign="top">
-                                          <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%; border-radius: 6px ;  border-radius: 6px ; -moz-border-radius: 6px;">
-                                            <tr>
-                                              <td class="body" align="center" style="padding-top:20px">Share your invite link:</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="note link" align="center" style="padding-bottom:20px">harrys.com/invite/xyz123ab</td>
-                                              </tr>
-                                          </table>
-                                      </td>
-                                    </tr>
-                                       <!--  Learn More  -->
-                                  <tr >
-                                    <td class="body learn" align="center" style="text-decoration: underline">Learn&nbsp;More</td>
-                                  </tr>
-                                  <!-- / Learn More  -->
-                                   </table>
+      <table id="refer"  align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width: 100%;background-color: #dde9ee" bgcolor="#dde9ee" >
+        <tr>
+          <td class="container__td" align="center" valign="top" width="100%" style="width:100%" >
+           <!--[if (gte mso 9)|(IE)]>
+            <table width="370" align="center"  border="0" cellspacing="0" cellpadding="0" style="width: 370px">
+              <tr>
+                <td>
+                <![endif]-->
+                <table class="width-90percent" align="center" border="0" cellpadding="0" cellspacing="0" width="370" style="max-width: 370px;width:100%">
+                   <!--  Ship Date -->
+                    <tr >
+                      <td class="refer-title h2" align="center">This order could be $5&nbsp;less</td>
+                    </tr>
+                     <!-- / Ship Date -->
+            
+                     <!--  Message  -->
+                    <tr >
+                      <td class="refer-text body" align="center">When a friend signs up for a trial, you'll both save $5 off  your next order.</td>
+                    </tr>
+                     <!--  / Message  -->
+                  </table>
 
-                                 <!--[if (gte mso 9)|(IE)]>
-                                </td>
+                    <table class="inner-container" align="center" border="0" cellpadding="0" cellspacing="0" width="380"  style="max-width: 380px;width:100%">
+                        <tr>
+                          <td class="inner-container__td" align="left" valign="top">
+                            <table class="content" align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="100%" style="width:100%; border-radius: 6px ;  border-radius: 6px ; -moz-border-radius: 6px;">
+                              <tr>
+                                <td class="body" align="center" style="padding-top:20px">Share your invite link:</td>
                               </tr>
+                              <tr>
+                                  <td class="body link" align="center" style="padding-bottom:20px">harrys.com/invite/xyz123ab</td>
+                                </tr>
                             </table>
-                          <![endif]-->
-
-
                         </td>
                       </tr>
+                       <!--  Learn More  -->
+                      <tr >
+                        <td class="body learn" align="center" style="text-decoration: underline">Learn&nbsp;More</td>
+                      </tr>
+                      <!-- / Learn More  -->
+                   </table>
 
-                    </table>
-                   
-              <!-- REFER A FRIEND end  -->
+                   <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                </tr>
+              </table>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+      <!-- REFER A FRIEND end  -->
 
 
 <!-- US & CA FOOTER -->
@@ -689,7 +671,7 @@
         <!-- MAMMOTH -->
         <tr>
                     <td align="center">
-            <a href="http://harrys.com?utm_source=penpal&utm_medium=email&utm_campaign={{campaign.${name}}}{{campaign.${message_name}}}">
+            <a href="">
               <img src="http://cdn.harrys.com/us-email/lifecycle/welcome/mammoth.png" width="47" height="36" border="0" style="display:block;">
             </a>
                     </td>
@@ -705,11 +687,10 @@
                         <br>
             <span class="smart-666666" style="text-decoration: none;">PO Box 566, <span style="white-space:nowrap;">New York, NY, 10014</span></span>
             <br>
-            <a href="https://itunes.apple.com/app/apple-store/id990024014?pt=108215816&ct=20161010_email_footer&mt=8" style="color: #666666; text-decoration: underline;">Download the App</a> | <a href="{{${set_user_to_unsubscribed_url}}}" style="color: #666666; text-decoration: underline;">Unsubscribe</a>
+            <a href="https://itunes.apple.com/app/apple-store/id990024014?pt=108215816&ct=20161010_email_footer&mt=8" style="color: #666666; text-decoration: underline;">Download the App</a> | <a href="" style="color: #666666; text-decoration: underline;">Unsubscribe</a>
 
                     </td>
                 </tr>
-
         <!-- NOTE END -->
         
         <tr><td width="100%" height="50" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td></tr>
