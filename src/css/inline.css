@@ -401,7 +401,7 @@ div.column-right {
 */
 .mod-3col-stack .container__td {
      padding-top: 0;
-    padding-bottom:42px;
+    padding-bottom:60px;
     padding-left: 0; 
    padding-right: 0; 
     width:100%;
@@ -458,8 +458,18 @@ div.column-right {
     padding-bottom: 8px;
 }
 .offers-text {
-    padding-bottom: 25px;
+    padding-bottom: 35px;
 }
+/*
+|--------------------------------------------------------------------------
+|  CHANGES - 1COL
+|-------------------------------------------------------------------------- 
+*/
+#changes .container__td {
+    padding-bottom: 50px;
+}
+#changes .note-title a {
+    text-decoration: underline}
 /*
 |--------------------------------------------------------------------------
 |  REFER A FRIEND
