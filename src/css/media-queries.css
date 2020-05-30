@@ -3,8 +3,24 @@
 | MEDIA QUERIES
 |==========================================================================
 
+BREAKPOINT 
+========================================================================== */
 
-BREAKPOINT 1 (+ 15px scrollbar)  - Fluid 
+@media only screen and (max-width: 613px) {
+     /*
+    |--------------------------------------------------------------------------
+    | SHAVE GEL SUBSCRIBE - 2COL | STACK | UNEVEN   &   OFFERS - 3COL | STACK
+    |-------------------------------------------------------------------------- 
+    */
+   td.align-center, 
+   table.align-center, 
+   img.align-center { 
+        text-align:center !important; 
+        margin:0 auto !important; 
+    }
+}
+/*
+BREAKPOINT (+ 15px scrollbar)  - Fluid 
 ========================================================================== */
 @media only screen and (max-width: 600px) {
     /*
@@ -46,50 +62,23 @@ BREAKPOINT 1 (+ 15px scrollbar)  - Fluid
 
 }
 /*  
-BREAKPOINT 2 -  Stack       612px including scroll bar
+BREAKPOINT 
 ============================================================================= */
-@media only screen and (max-width: 597px) {
- /*
-    |--------------------------------------------------------------------------
-    | SHAVE GEL SUBSCRIBE - 2COL | STACK | UNEVEN   &   OFFERS - 3COL | STACK
-    |-------------------------------------------------------------------------- 
-    */
-    td.align-center, table.align-center, img.align-center {
-        text-align: center !important;
-        margin: 0 auto !important;
-    }
-    /*
-    |--------------------------------------------------------------------------
-    |  OFFERS - 3COL | STACK
-    |-------------------------------------------------------------------------- 
-    */
-    .offers-cta {
-    width: none !important;
-    border-right-width: 30px !important;
-    border-left-width: 30px !important;}
- }
-
+@media only screen and (max-width: 520px) {
 /*  
-BREAKPOINT 3 -  Mob-Stack 
-============================================================================= */
-@media only screen and (max-width: 514px) {
-    /*
-    |--------------------------------------------------------------------------
-    |   CUSTOMER PRODUCTS - 2COL | SCALE
-    |-------------------------------------------------------------------------- 
-    */
-    .mod-2col-scale .col-l__td {
-        padding: 0 7%;
-    }
      /*
     |--------------------------------------------------------------------------
     |  OFFERS - 3COL | STACK
     |-------------------------------------------------------------------------- 
     */
+    .mod-3col-stack div.column-one,
+    .mod-3col-stack div.column-two,
+    .mod-3col-stack div.column-three{
+        max-width:48% !important; 
+    }
     .mod-3col-stack .inner-container__td {
         padding: 0 10px;
     }
-    .large-cta-offers, .large-cta-offers a{border-right-width:30px!important;border-left-width:30px!important;}
 
 }
 /*  
@@ -97,7 +86,7 @@ BREAKPOINT 4 -  Mob-Stack
 ============================================================================= */
 @media only screen and (max-width: 338px) {
        
-        u + .body-tag .wrapper {
+    u + .body-tag .wrapper {
         width: 100% !important;
         width: 100vw !important;
     }

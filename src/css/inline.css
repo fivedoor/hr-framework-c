@@ -167,17 +167,17 @@ div.mob-nav-hamburger {
     border-left: 29px solid #E34F30; 
     display: inline-block;
 }
-.offers-cta-alt {
+.offers-cta {
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px; 
     border-radius: 3px;
     width:130px;
     background-color: #E34F30; 
 }
-.offers-cta-alt a {
+.offers-cta a {
     font-size: 13px; 
     letter-spacing: 0.16em; 
-    line-height:20px; 
+    line-height:15px; 
     font-family: Futura, Trebuchet MS, Arial, sans-serif; 
     color: #FFFFFF; 
     font-weight: normal; 
@@ -188,6 +188,8 @@ div.mob-nav-hamburger {
     padding: 12px 18px; 
     border: 1px solid #E34F30; 
     display: inline-block;
+    mso-padding-alt: 8px;
+
 }
 .h1 a, 
 .h2 a, 
@@ -299,8 +301,20 @@ div.mob-nav-hamburger {
     padding: 0 20px 0 10px;
 
     text-align: left;
-    height: 130px 
+    height: 130px;
+    color: #868686;
+    font-size: 13px; 
+    font-weight: normal; 
+    letter-spacing: 0.4px; 
+    line-height: 20px;
+    font-family: Verdana, Geneva, sans-serif; 
 } 
+.mod-2col-scale .prod-title {
+    font-size: 14px; 
+    font-weight: normal; 
+    letter-spacing: 0px; 
+    line-height: 24px;
+}
 .mod-2col-scale .content-container
 {
     padding: 0;
@@ -354,7 +368,10 @@ div.mob-nav-hamburger {
     font-size: 0;
     text-align: center;
 }
-
+.mod-2col-stack .img {
+    max-width: 280px; 
+    width: 100%;
+}
 /** LEFT COL -------------------------------------------------- */
 
 div.column-left {
@@ -366,9 +383,6 @@ div.column-left {
 .mod-2col-stack .content-container
 {
     padding: 0;
-}
-.mod-2col-stack .content-container
-{
 }
 .mod-2col-stack .content-container__td
 {
@@ -396,7 +410,7 @@ div.column-right {
 }
 /*
 |--------------------------------------------------------------------------
-|  OFFERS - 3COL | STACK
+|  ADD MORE - 3COL | STACK
 |-------------------------------------------------------------------------- 
 */
 .mod-3col-stack .container__td {
@@ -406,15 +420,25 @@ div.column-right {
    padding-right: 0; 
     width:100%;
 }
-.mod-3col-stack .inner-container__t {
-    max-width:556px;
-    width:100%
+.offers-title {
+    padding-bottom: 8px;
+}
+.offers-text {
+    padding-bottom: 35px;
+    color: #868686; 
+    font-family: Verdana, Geneva, sans-serif; 
+    font-size: 14px; 
+    font-weight: normal;
+    letter-spacing: 0px; 
+    line-height: 30px;  
 }
 .mod-3col-stack .inner-container__td {
     font-size:0;
     padding: 0;
 }
-
+.mod-3col-stack .content {
+    width:100%;
+}
 .mod-3col-stack div.column-one,
 .mod-3col-stack div.column-two,
 .mod-3col-stack div.column-three{
@@ -438,28 +462,23 @@ div.column-right {
     -webkit-border-radius: 6px; 
     -moz-border-radius: 6px; 
 }
-
-.mod-3col-stack .fr-title {
-    width:100%;
-    padding: 12px 20px 0;
+.mod-3col-stack .offers-cta-container {
+    padding: 25px;
+    width: 100%;
 }
 
-.mod-3col-stack .fr-divider {
-    width:100%;
-    padding: 0 20px 6px;
+.mod-3col-stack .img {
+    padding: 25px 25px 0; 
+    width: 100%;
+}
+.mod-3col-stack .img img {
+    max-width: 130px; 
+    width: 100%;
+}
+.mod-3col-stack .note-title {
+    padding-top: 15px;
 }
 
-.mod-3col-stack .fr-cta {
-    width:100%;
-    padding: 6px 20px 20px;
-    border-bottom: 1px solid #cccccc;
-}
-.offers-title {
-    padding-bottom: 8px;
-}
-.offers-text {
-    padding-bottom: 35px;
-}
 /*
 |--------------------------------------------------------------------------
 |  CHANGES - 1COL
@@ -477,7 +496,7 @@ div.column-right {
 */
 #refer .container__td {
     padding-top: 40px;
-   padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 #refer .refer-title  {
@@ -492,8 +511,12 @@ div.column-right {
      color: #3CA6E0;
      font-weight: bold
 }
-
+#refer .link a  {
+     color: #3CA6E0;
+     text-decoration: none
+}
 #refer .learn  {
     padding-top:  10px;
-     color: #263645
+    color: #263645; 
+    text-decoration: underline;
 }

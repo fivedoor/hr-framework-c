@@ -37,7 +37,7 @@
 */
 .mod-2col-scale .inner-container:first-child {
     border-radius: 6px 6px 0 0; 
-    border-radius: 6px 6px 0 0; 
+    -webkit-border-radius: 6px 6px 0 0; 
     -moz-border-radius: 6px 6px 0 0; 
 }
 .mod-2col-scale .inner-container:last-child {
@@ -46,10 +46,12 @@
     -moz-border-radius: 0 0 6px 6px; 
 }
 
-
 /*
 |--------------------------------------------------------------------------
 |  APPLE BLUE LINKS - HARRYS RESET
 |-------------------------------------------------------------------------- 
 */
-.smart-666666 a {color:#666666 !important; text-decoration: none !important;}
+.smart-666666 a { 
+    color:#666666 !important; 
+    text-decoration: none !important;
+  }

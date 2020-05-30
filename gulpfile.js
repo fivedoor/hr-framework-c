@@ -377,6 +377,10 @@ const regex_regex_htmlDevComments = /<!---(?!<!)[^\[>].*?-->/g; // html dev comm
 const regex_htmlAllComments = /<!--([\s\S]*?)-->/g; // html single and multi line 
 const regex_htmlAllDevComments = /<!---([\s\S]*?)-->/g; // html dev single and multi line 
 const regex_cssLineBreaks =  /\s+(?=(?:(?!}|\{).)*\})/gs;  // Find linebreaks within {} | https://regex101.com/r/dN3kB4/13
+const regex_cssLineBreaksNoSpace =  /\s +(?=(?:(?!}|\{).)*\})/gs; // regex_cssLineBreaks seems to also delete any white space between {} - this can have destructive impact on css working/being interpreted properly. This regex does not match on white space so preserves them but deletes line breaks | https://stackoverflow.com/questions/21620329/how-to-match-tab-and-newline-but-not-space-with-regex
+const regex_cssLineBreaksNoSpace1 = /\n+(?=(?:(?!}|\{).)*\})/gs; // https://stackoverflow.com/questions/20056306/match-linebreaks-n-or-r-n  | https://stackoverflow.com/questions/5200353/match-line-break-with-regular-expression
+const regex_multipleWhiteSpaces = / +(?= )/g;  // https://stackoverflow.com/questions/1981349/regex-to-replace-multiple-spaces-with-a-single-space | cleans up css but gets rid of all html spaces 
+const regex_multipleWhiteSpaces1 = /  +(?=(?:(?!}|\{).)*\})/gs; 
 const regex_emptyLines = /^(?:[\t ]*(?:\r?\n|\r))+/gm; // Find empty lines
 
 gulp.task('css:comments-strip', function () {
@@ -394,10 +398,12 @@ gulp.task('css:comments-strip', function () {
  gulp.task('css:format', function () {
       return gulp
         .src(['./src/compiled/index.html'])
-        .pipe(replace(regex_cssLineBreaks, ''))  // Strip linebreaks within {} 
+        .pipe(replace(regex_cssLineBreaksNoSpace1, ''))  // Strip linebreaks within {} but not whitespaces 
         .pipe(replace(regex_emptyLines, ''))  // Strip empty lines
+        .pipe(replace(regex_multipleWhiteSpaces1, ''))  // Smultiple white spaces
         .pipe(gulp.dest('src/compiled/'));
   });
+
 /*  
   NOT WORKING: 
   gulp.task('css:format', function() {
